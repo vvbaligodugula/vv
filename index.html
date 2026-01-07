@@ -16,13 +16,11 @@
 
 <header>
   <nav>
-    <div class="left">Home</div>
-    <div class="right">
-      <button onclick="showPage('home')">Home</button>
-      <button onclick="showPage('posts')">Posts</button>
-      <button onclick="showPage('news')">News</button>
-      <button onclick="showPage('publications')">Publications</button>
-      <button onclick="showPage('about')">About Me</button>
+    <div class="nav-center">
+      <button onclick="showPage('home')"><strong>Home</strong></button>
+      <button onclick="showPage('news')"><strong>News</strong></button>
+      <button onclick="showPage('publications')"><strong>Publications</strong></button>
+      <button onclick="showPage('about')"><strong>About Me</strong></button>
       <button onclick="toggleTheme()" class="theme">🌙</button>
     </div>
   </nav>
@@ -53,38 +51,89 @@
   </div>
 </section>
 
-<!-- POSTS -->
-<section id="posts" class="page">
-  <h2>Posts</h2>
-  <p>Coming soon.</p>
-</section>
-
 <!-- NEWS -->
 <section id="news" class="page">
   <h2>News</h2>
   <ul>
-    <li>Jan 2026 — Paper accepted at IEEE NAECON</li>
-    <li>Dec 2025 — Reviewer for IEEE MWSCAS</li>
+    <li><strong>2025:</strong> Paper accepted at <em>IEEE NAECON</em> on parallel k-means acceleration.</li>
+    <li><strong>2025:</strong> Paper accepted at <em>IEEE MWSCAS</em> on ML-driven beamforming.</li>
+    <li><strong>2025:</strong> Serving as reviewer for IEEE MWSCAS, NAECON, SATC, and ACDSA.</li>
+    <li><strong>2025:</strong> Awarded Graduate Research Fellowship, Wright State University.</li>
+    <li><strong>2024–2025:</strong> Research supported by U.S. Air Force ADMETE Program.</li>
   </ul>
 </section>
 
 <!-- PUBLICATIONS -->
 <section id="publications" class="page">
   <h2>Publications</h2>
+
+  <h3>Journal Articles</h3>
   <ul>
-    <li><strong>Hardware-aware federated learning.</strong> Electronics, 2025.</li>
-    <li><strong>Adaptive exon prediction.</strong> Springer, 2022.</li>
+    <li>
+      <strong>Hardware-aware federated learning:</strong>
+      Optimizing differential privacy in distributed architectures.
+      <em>Electronics</em>, 2025.
+    </li>
+    <li>
+      <strong>Secure network segmentation in IIoT environments.</strong>
+      <em>Computing & AI Connect</em>, 2024.
+    </li>
+    <li>
+      <strong>Machine learning for polysiloxane-based polymer prediction.</strong>
+      <em>ACS Omega</em>, 2025.
+    </li>
+  </ul>
+
+  <h3>Conference Proceedings</h3>
+  <ul>
+    <li>
+      <strong>Multi-core acceleration of k-means.</strong>
+      IEEE NAECON, 2025 — Parallel clustering for high-dimensional data.
+    </li>
+    <li>
+      <strong>ML-driven optimization of adaptive beamforming.</strong>
+      IEEE MWSCAS, 2025.
+    </li>
+    <li>
+      <strong>Adaptive ensemble learning for fraud detection.</strong>
+      IEEE SATC, 2025.
+    </li>
+    <li>
+      <strong>Adaptive exon prediction using MN-LMF algorithms.</strong>
+      Springer, 2022.
+    </li>
   </ul>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="page">
   <h2>About Me</h2>
+
   <p>
-    I am a Ph.D. student at Wright State University,
-    working on scalable machine learning systems,
-    quantum-classical optimization, and distributed computing.
+    I am a Ph.D. student in Computer Science at Wright State University, Dayton, Ohio.
+    I am co-advised by <strong>Prof. Nella Ludlow</strong> and
+    <strong>Prof. Fathi Amsaad</strong>.
   </p>
+
+  <p>
+    I received my <strong>M.S. in Computer Science</strong> from Wright State University (2023),
+    where my thesis focused on unsupervised and distributed machine learning for efficient
+    data clustering and prediction under Prof. Fathi Amsaad.
+  </p>
+
+  <p>
+    I earned my <strong>B.Tech. in Electronics and Communication Engineering</strong> from
+    KL University, India (2021), where I worked on adaptive exon prediction algorithms
+    under Prof. Md. Zia Ur Rahman.
+  </p>
+
+  <h3>Research Interests</h3>
+  <ul>
+    <li>Quantum Machine Learning</li>
+    <li>High-Dimensional Clustering</li>
+    <li>Distributed & Parallel Optimization</li>
+    <li>Computational Genomics</li>
+  </ul>
 </section>
 
 </main>
