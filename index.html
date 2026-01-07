@@ -1,194 +1,79 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vishnu Vardhan Baligodugula</title>
-    <style>
-        :root {
-            --bg-color: #ffffff;
-            --text-color: #000000;
-            --link-color: #000000;
-            --hover-color: #666666;
-        }
-        
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg-color: #000000;
-                --text-color: #ffffff;
-                --link-color: #ffffff;
-                --hover-color: #999999;
-            }
-        }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
+    <!-- Define title -->
+    <title>Carl Barks</title>
 
-        a {
-            color: var(--link-color);
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
+    <!-- Include favicon. Use, e.g., https://favicon.io/ -->
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
 
-        a:hover {
-            color: var(--hover-color);
-        }
+    <!-- Include style sheets -->
+    <link rel="stylesheet" href="main.css" />
 
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 2rem;
-        }
+    <!-- Fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet" />
 
-        .name {
-            font-size: 1.25rem;
-            font-weight: bold;
-        }
+    <!-- Load FontAwesome (for icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+    />
 
-        .nav a {
-            margin-left: 1rem;
-        }
+    <!-- Load Academicons (for more icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css"
+      integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+      crossorigin="anonymous"
+    />
+  </head>
 
-        .content {
-            display: grid;
-            grid-template-columns: 3fr 1fr;
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
+  <body>
+    <section id="content">
+      <!-- Avatar image -->
+      <img src="image.png" alt="Carl Barks" class="avatar" />
 
-        .profile-img {
-            width: 100%;
-            border-radius: 50%;
-            aspect-ratio: 1/1;
-            object-fit: cover;
-        }
+      <!-- Text -->
+      <h1>Hi, I'm Vishnu Vardhan Baligodugula!</h1>
+      <p>
+        I am a Ph.D. student in CS at Wright State University.
+      </p>
+      <p>
+        Most of my current research is driven by trying to find an answer to "quantum-classical hybrid optimization algorithms for large-scale biological datasets".
+      </p>
+      <p>
+        Please feel free to get in touch!
+      </p>
 
-        .section {
-            margin-bottom: 2rem;
-        }
-
-        .section h2 {
-            font-size: 1.25rem;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-        }
-
-        .publication {
-            margin-bottom: 1rem;
-        }
-
-        .publication-title {
-            font-weight: bold;
-        }
-
-        .publication-details {
-            color: var(--hover-color);
-        }
-
-        @media (max-width: 768px) {
-            .content {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .theme-toggle {
-            cursor: pointer;
-            user-select: none;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <div class="name">Vishnu Vardhan Baligodugula</div>
-        <nav class="nav">
-            <a href="#about">About</a>
-            <a href="#research">Research</a>
-            <a href="#publications">Publications</a>
-            <span class="theme-toggle" id="theme-toggle">🌓</span>
-        </nav>
-    </div>
-
-    <div class="content">
-        <div class="text-content">
-            <div class="section">
-                <p>
-                    I am a Ph.D. student in Computer Science at Wright State University, 
-                    advised by Prof. Fathi Amsaad. My research focuses on quantum-classical 
-                    hybrid optimization algorithms for large-scale biological datasets.
-                </p>
-                <div style="margin-top: 1rem;">
-                    <a href="mailto:vvbaligodugula@gmail.com" style="margin-right: 1rem;">Email</a>
-                    <a href="https://github.com/vvbaligodugula" style="margin-right: 1rem;">GitHub</a>
-                    <a href="https://www.linkedin.com/in/vishnu-vardhan-baligodugula" style="margin-right: 1rem;">LinkedIn</a>
-                    <a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID">Google Scholar</a>
-                </div>
-            </div>
-
-            <div class="section" id="research">
-                <h2>Research Interests</h2>
-                <ul style="padding-left: 1.5rem;">
-                    <li>Quantum Machine Learning</li>
-                    <li>High-Dimensional Clustering</li>
-                    <li>Distributed Optimization</li>
-                    <li>Computational Genomics</li>
-                </ul>
-            </div>
-
-            <div class="section" id="publications">
-                <h2>Selected Publications</h2>
-                <div class="publication">
-                    <div class="publication-title">Accelerating Federated Learning via Distributed Parallel Processing</div>
-                    <div class="publication-details">
-                        V. V. Baligodugula, N. Ahmed, H. Brian, F. Amsaad, V. Schmidt
-                        <br>Computing AI Connect, September 2025
-                    </div>
-                </div>
-                <div class="publication">
-                    <div class="publication-title">Hardware-aware Federated Learning: Optimizing Differential Privacy</div>
-                    <div class="publication-details">
-                        V. V. Baligodugula, F. Amsaad
-                        <br>Electronics, Volume 14, Issue 6, 2025
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="profile-image-container">
-            <img src="image.png" alt="Vishnu Vardhan Baligodugula" class="profile-img">
-        </div>
-    </div>
-
-    <script>
-        const themeToggle = document.getElementById('theme-toggle');
-        const root = document.documentElement;
-
-        // Check for saved theme
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-            document.body.classList.add('dark-mode');
-        }
-
-        themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            
-            // Save preference
-            const isDark = document.body.classList.contains('dark-mode');
-            localStorage.setItem('theme', isDark ? 'dark' : 'light');
-        });
-    </script>
-</body>
+      <!-- Icons -->
+      <ul class="icons">
+        <li>
+          <a href="" title="Institutional website"><i class="fas fa-university"></i></a>
+        </li>
+        <li>
+          <a href="mailto:vvbaligodugula@gmail.com" title="E-Mail"><i class="fas fa-envelope"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/vvbaligodugula" title="GitHub"><i class="fab fa-github"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/vardhanvishnu5647688/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="https://scholar.google.com/citations?user=zF9DbSoAAAAJ&hl=en" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+        </li>
+      </ul>
+    </section>
+  </body>
+ 
 </html>
