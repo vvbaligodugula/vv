@@ -3,11 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Vishnu Vardhan Baligodugula</title>
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"
-        content="Ph.D. student in Computer Science at Wright State University. Research in Quantum Machine Learning and Distributed Optimization.">
-
   <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="main.css">
 </head>
@@ -16,52 +12,52 @@
 
 <header>
   <nav>
-    <a href="#" class="site-title">Vishnu Baligodugula</a>
+    <span class="site-title">Vishnu Baligodugula</span>
+
     <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#publications">Publications</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#contact">Contact</a>
+      <button onclick="showSection('home')">Home</button>
+      <button onclick="showSection('news')">News</button>
+      <button onclick="showSection('publications')">Publications</button>
+      <button onclick="showSection('about')">About me</button>
+      <button onclick="toggleTheme()" class="theme-btn">🌙</button>
     </div>
   </nav>
 </header>
 
 <main>
 
-  <!-- HERO -->
-  <section class="hero">
-    <img src="image.png" alt="Vishnu Baligodugula">
+  <!-- HOME -->
+  <section id="home" class="page active">
+    <div class="hero">
+      <img src="image.png" alt="Vishnu">
+      <h1>Hi, I’m Vishnu!</h1>
+      <p>
+        I am Ph.D. student in Computer Science at Wright State University.<br>
+        Quantum Machine Learning · Distributed Optimization · Computational Genomics
+      </p>
 
-    <h1>Hi, I’m Vishnu.</h1>
-
-    <p class="subtitle">
-      Ph.D. student in Computer Science at Wright State University.<br>
-      Quantum Machine Learning · Distributed Optimization · Computational Genomics
-    </p>
-
-    <p class="links">
-      <a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar</a> ·
-      <a href="https://github.com/vvbaligodugula">GitHub</a> ·
-      <a href="https://www.linkedin.com/in/vishnu-vardhan-baligodugula/">LinkedIn</a> ·
-      <a href="Vishnu-CV-final.pdf">CV</a>
-    </p>
+      <p class="links">
+        <a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar</a> ·
+        <a href="https://github.com/vvbaligodugula">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/vishnu-vardhan-baligodugula/">LinkedIn</a> ·
+        <a href="Vishnu-CV-final.pdf">CV</a>
+      </p>
+    </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About</h2>
-    <p>
-      I am a Ph.D. student in Computer Science at Wright State University,
-      co-advised by Prof. Nella Ludlow and Prof. Fathi Amsaad.
-      My research focuses on scalable and parallel machine learning systems,
-      quantum–classical hybrid optimization, and high-dimensional data analysis
-      for biological and distributed environments.
-    </p>
+  <!-- NEWS -->
+  <section id="news" class="page">
+    <h2>News</h2>
+    <ul>
+      <li><strong>Jan 2026:</strong> Paper accepted at IEEE NAECON 2025.</li>
+      <li><strong>Dec 2025:</strong> Serving as reviewer for IEEE MWSCAS.</li>
+      <li><strong>Sep 2025:</strong> Joined Wright State University as Ph.D. researcher.</li>
+    </ul>
   </section>
 
   <!-- PUBLICATIONS -->
-  <section id="publications">
-    <h2>Selected Publications</h2>
+  <section id="publications" class="page">
+    <h2>Publications</h2>
     <ul>
       <li>
         <strong>Hardware-aware federated learning:</strong>
@@ -79,21 +75,14 @@
     </ul>
   </section>
 
-  <!-- TEACHING -->
-  <section id="teaching">
-    <h2>Teaching</h2>
-    <ul>
-      <li>Head Graduate Teaching Assistant — Distributed Computing (WSU)</li>
-      <li>Graduate Teaching Assistant — C Programming</li>
-    </ul>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
+  <!-- ABOUT -->
+  <section id="about" class="page">
+    <h2>About Me</h2>
     <p>
-      Email: <a href="mailto:vvbaligodugula@gmail.com">vvbaligodugula@gmail.com</a><br>
-      Dayton, Ohio, USA
+      I am a Ph.D. student in Computer Science at Wright State University,
+      co-advised by Prof. Nella Ludlow and Prof. Fathi Amsaad.
+      My research focuses on scalable machine learning systems,
+      quantum–classical hybrid optimization, and high-dimensional data analysis.
     </p>
   </section>
 
@@ -102,6 +91,20 @@
 <footer>
   © 2026 Vishnu Vardhan Baligodugula
 </footer>
+
+<!-- SCRIPT -->
+<script>
+  function showSection(id) {
+    document.querySelectorAll('.page').forEach(sec => {
+      sec.classList.remove('active');
+    });
+    document.getElementById(id).classList.add('active');
+  }
+
+  function toggleTheme() {
+    document.body.classList.toggle('dark');
+  }
+</script>
 
 </body>
 </html>
