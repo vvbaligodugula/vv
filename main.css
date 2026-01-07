@@ -12,22 +12,19 @@ body.dark {
 }
 
 header {
-  padding: 30px 40px;
+  padding: 30px;
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 900px;
-  margin: auto;
+  justify-content: center;
 }
 
-.right button {
+.nav-center button {
   background: none;
   border: none;
   font-size: 1rem;
-  margin-left: 18px;
+  margin: 0 16px;
   cursor: pointer;
   color: inherit;
 }
@@ -37,9 +34,9 @@ nav {
 }
 
 main {
-  max-width: 720px;
+  max-width: 760px;
   margin: auto;
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 .page {
@@ -51,19 +48,19 @@ main {
 }
 
 .avatar {
-  width: 180px;
+  width: 190px;
   border-radius: 50%;
   margin-bottom: 30px;
 }
 
 h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 2.6rem;
+  margin-bottom: 16px;
 }
 
 .intro {
-  font-size: 1.2rem;
-  margin-bottom: 18px;
+  font-size: 1.15rem;
+  margin-bottom: 14px;
 }
 
 .icons a {
@@ -74,10 +71,15 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+}
+
+h3 {
+  margin-top: 30px;
 }
 
 ul {
   list-style: none;
   padding: 0;
+  line-height: 1.8;
 }
