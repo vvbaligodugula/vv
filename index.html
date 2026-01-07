@@ -6,104 +6,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="main.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
 <header>
   <nav>
-    <span class="site-title">Vishnu Baligodugula</span>
-
-    <div class="nav-links">
-      <button onclick="showSection('home')">Home</button>
-      <button onclick="showSection('news')">News</button>
-      <button onclick="showSection('publications')">Publications</button>
-      <button onclick="showSection('about')">About me</button>
-      <button onclick="toggleTheme()" class="theme-btn">🌙</button>
+    <div class="left">Home</div>
+    <div class="right">
+      <button onclick="showPage('home')">Home</button>
+      <button onclick="showPage('posts')">Posts</button>
+      <button onclick="showPage('news')">News</button>
+      <button onclick="showPage('publications')">Publications</button>
+      <button onclick="showPage('about')">About Me</button>
+      <button onclick="toggleTheme()" class="theme">🌙</button>
     </div>
   </nav>
 </header>
 
 <main>
 
-  <!-- HOME -->
-  <section id="home" class="page active">
-    <div class="hero">
-      <img src="image.png" alt="Vishnu">
-      <h1>Hi, I’m Vishnu!</h1>
-      <p>
-        I am Ph.D. student in Computer Science at Wright State University.<br>
-        Quantum Machine Learning · Distributed Optimization · Computational Genomics
-      </p>
+<!-- HOME -->
+<section id="home" class="page active">
+  <img src="image.png" class="avatar">
 
-      <p class="links">
-        <a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar</a> ·
-        <a href="https://github.com/vvbaligodugula">GitHub</a> ·
-        <a href="https://www.linkedin.com/in/vishnu-vardhan-baligodugula/">LinkedIn</a> ·
-        <a href="Vishnu-CV-final.pdf">CV</a>
-      </p>
-    </div>
-  </section>
+  <h1>Hi, I’m Vishnu!</h1>
 
-  <!-- NEWS -->
-  <section id="news" class="page">
-    <h2>News</h2>
-    <ul>
-      <li><strong>Jan 2026:</strong> Paper accepted at IEEE NAECON 2025.</li>
-      <li><strong>Dec 2025:</strong> Serving as reviewer for IEEE MWSCAS.</li>
-      <li><strong>Sep 2025:</strong> Joined Wright State University as Ph.D. researcher.</li>
-    </ul>
-  </section>
+  <p class="intro">
+    Ph.D. student in Computer Science at Wright State University.<br>
+    Research in Quantum Machine Learning and Distributed Optimization.
+  </p>
 
-  <!-- PUBLICATIONS -->
-  <section id="publications" class="page">
-    <h2>Publications</h2>
-    <ul>
-      <li>
-        <strong>Hardware-aware federated learning:</strong>
-        Optimizing differential privacy in distributed computing architectures.
-        <em>Electronics</em>, 2025.
-      </li>
-      <li>
-        <strong>Adaptive ensemble learning for real-time financial fraud detection.</strong>
-        IEEE SATC, 2025.
-      </li>
-      <li>
-        <strong>Adaptive exon prediction using maximum error normalized algorithms.</strong>
-        Springer, 2022.
-      </li>
-    </ul>
-  </section>
+  <p class="intro">
+    Please feel free to get in touch! :)
+  </p>
 
-  <!-- ABOUT -->
-  <section id="about" class="page">
-    <h2>About Me</h2>
-    <p>
-      I am a Ph.D. student in Computer Science at Wright State University,
-      co-advised by Prof. Nella Ludlow and Prof. Fathi Amsaad.
-      My research focuses on scalable machine learning systems,
-      quantum–classical hybrid optimization, and high-dimensional data analysis.
-    </p>
-  </section>
+  <div class="icons">
+    <a href="mailto:vvbaligodugula@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/vvbaligodugula"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/vishnu-vardhan-baligodugula/"><i class="fab fa-linkedin"></i></a>
+    <a href="https://scholar.google.com/citations?user=YOUR_ID"><i class="fas fa-graduation-cap"></i></a>
+  </div>
+</section>
+
+<!-- POSTS -->
+<section id="posts" class="page">
+  <h2>Posts</h2>
+  <p>Coming soon.</p>
+</section>
+
+<!-- NEWS -->
+<section id="news" class="page">
+  <h2>News</h2>
+  <ul>
+    <li>Jan 2026 — Paper accepted at IEEE NAECON</li>
+    <li>Dec 2025 — Reviewer for IEEE MWSCAS</li>
+  </ul>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications" class="page">
+  <h2>Publications</h2>
+  <ul>
+    <li><strong>Hardware-aware federated learning.</strong> Electronics, 2025.</li>
+    <li><strong>Adaptive exon prediction.</strong> Springer, 2022.</li>
+  </ul>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="page">
+  <h2>About Me</h2>
+  <p>
+    I am a Ph.D. student at Wright State University,
+    working on scalable machine learning systems,
+    quantum-classical optimization, and distributed computing.
+  </p>
+</section>
 
 </main>
 
-<footer>
-  © 2026 Vishnu Vardhan Baligodugula
-</footer>
-
-<!-- SCRIPT -->
 <script>
-  function showSection(id) {
-    document.querySelectorAll('.page').forEach(sec => {
-      sec.classList.remove('active');
-    });
-    document.getElementById(id).classList.add('active');
-  }
+function showPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
 
-  function toggleTheme() {
-    document.body.classList.toggle('dark');
-  }
+function toggleTheme() {
+  document.body.classList.toggle('dark');
+}
 </script>
 
 </body>
