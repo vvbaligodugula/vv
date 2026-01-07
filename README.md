@@ -5,7 +5,7 @@ If you are an academic, **[you should have a website](https://kenworthy.space/ad
 This repository here is meant to help you get started by providing you with everything you need to have your own minimal website up and running in (hopefully) less than 10 minutes. It will look something like this:
 
 <center>
-  <img src="mockup.png" alt="Mockup">
+  <img src="image.png" alt="Mockup">
 </center>
 
 
